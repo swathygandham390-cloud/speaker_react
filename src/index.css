@@ -396,7 +396,7 @@
         line-height: 1.5;
         word-wrap: break-word;
       }
-      @media (max-width:480pxx){
+      @media (max-width:480px){
         .page-hero{
           padding: 30px 10px 10px;
         }
