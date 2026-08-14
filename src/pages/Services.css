@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap");
+
+/* ---------- Tokens (match Events.css) ---------- */
+:root {
+  --ivory: #f7f3ec;
+  
+  
+  --gold: #a3a333;
+  --gold-soft: red;
+  --slate: #8a8f9c;
+  --slate-line: rgba(7, 36, 182, 0.12);
+  --card-shadow: 0 20px 40px -20px rgba(29, 153, 45, 0.35);
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+/* ---------- Base ---------- */
+.services-page {
+  background: rgb(147, 122, 168);
+  color: var(--ink);
+  font-family: var(--font-body);
+  padding: 40px;
+  max-width: 1960px;
+  margin: 0 auto;
+}
+
+.services-page *,
+.services-page *::before,
+.services-page *::after {
+  box-sizing: border-box;
+}
+
+/* ---------- Header ---------- */
+.services-header {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+.services-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 1.1rem;
+}
+
+.services-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  line-height: 1.15;
+  margin: 0 0 1.1rem;
+}
+
+.services-subtitle {
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 50ch;
+  margin: 0 auto;
+}
+
+/* ---------- Section label ---------- */
+.services-section {
+  margin-bottom: 4rem;
+}
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 1.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--slate-line);
+}
+
+/* ---------- Topics grid ---------- */
+.topic-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.topic-card {
+  background: #ffffff;
+  border: 1px solid var(--slate-line);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow);
+}
+
+.topic-audience {
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(198, 146, 44, 0.12);
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+}
+
+.topic-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin: 0;
+  color: var(--ink);
+}
+
+.topic-description {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+/* ---------- Offerings list ---------- */
+.offering-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.offering-card {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 2rem;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid var(--slate-line);
+  border-left: 3px solid var(--gold);
+  border-radius: 10px;
+  padding: 1.75rem 2rem;
+}
+
+.offering-format__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 0 0 0.5rem;
+  color: var(--ink);
+}
+
+.offering-description {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.offering-specs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0;
+  padding-left: 2rem;
+  border-left: 1px solid var(--slate-line);
+}
+
+.offering-spec dt {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--slate);
+  margin-bottom: 0.3rem;
+}
+
+.offering-spec dd {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* ---------- CTA ---------- */
+.services-cta {
+  text-align: center;
+  border-top: 1px solid var(--slate-line);
+  padding-top: 3rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+.services-cta__text {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  margin: 0 0 0.9rem;
+  color: var(--ink);
+}
+
+.services-cta__link {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 2px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  border-radius: 8px;
+}
+
+.services-cta__link:hover {
+  color: var(--gold);
+  border-color: var(--ink);
+  background-color: blue;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 860px) {
+  .topic-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .offering-card {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .offering-specs {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid var(--slate-line);
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .services-page {
+    padding: 3.5rem 1.25rem 5rem;
+  }
+
+  .topic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .offering-specs {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}

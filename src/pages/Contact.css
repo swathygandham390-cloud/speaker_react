@@ -1,0 +1,85 @@
+/* ================================
+   CONTACT
+================================ */
+*{
+    box-sizing: border-box;
+}
+
+.contact-page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.page-hero{
+    text-align: center;
+    padding: 60px 20px 20px ;
+    background-color: rgb(102, 131, 131);
+    
+
+}
+.section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #182430;
+    color: white;
+}
+
+.contact {
+    max-width: 1000px;
+    margin: 0 px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    width: 100%;
+    padding: 40px;
+    align-items: start;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rebeccapurple;
+    color: white;
+
+
+}
+
+.contact-info p {
+    margin: 15px 0;
+    color: #667;
+}
+
+.contact-info a {
+    color: #0a66c2;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #0a66c2;
+}
+
+form button {
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    background: #0a66c2;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
